@@ -1,0 +1,25 @@
+[project]
+name = "langchain-course"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Ravikishore31", email = "rkishore.adabala@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "black>=26.5.1",
+    "dotenv>=0.9.9",
+    "isort>=9.0.1",
+    "langchain>=1.4.0",
+    "langchain-google-genai>=4.4.0",
+    "langchain-openai>=1.6.2",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+langchain-course = "langchain_course:main"
+
+[build-system]
+requires = ["uv_build>=0.12.0,<0.13.0"]
+build-backend = "uv_build"
